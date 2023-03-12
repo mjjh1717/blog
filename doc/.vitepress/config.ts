@@ -313,6 +313,10 @@ export default defineConfig({
               text: "Pinia",
               link: "/mdFile/vue/17 Pinia",
             },
+            {
+              text: "TypeScript",
+              link: "/mdFile/vue/18 TypeScript",
+            },
           ],
         },
       ],

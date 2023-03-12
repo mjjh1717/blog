@@ -66,5 +66,7 @@ features:
   - icon: 1️⃣6️⃣
     title: Pinia
     link: /mdFile/vue/17 Pinia
-  - title:
+  - icon: 1️⃣7️⃣
+    title: TypeScirpt
+    link: /mdFile/vue/18 TypeScript
 ---
