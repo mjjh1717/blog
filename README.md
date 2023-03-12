@@ -4,12 +4,23 @@
 
 ## 如何运行??
 
-setp 1 pnpm install
+setp 1 
+
+```sh
+pnpm install
+```
+
 setp 2 (可选) 修改 package.json 启动命令为你自己方便的命令
-setp 3 pnpm run dev
+setp 3 
 
-### 以下为本项目的目录结构
+```sh
+pnpm run dev
+```
 
+### 以下为本项目的目录结构：
+
+```
+.
 └─docs 项目主目录
 │ index.md 首页
 │ htmlCss.md htmlCss 首页
@@ -41,3 +52,5 @@ setp 3 pnpm run dev
 package.json 项目配置文件
 pnpm-lock.yaml 项目依赖文件
 readme.md 说明文件
+```
+
