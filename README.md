@@ -4,14 +4,17 @@
 
 ## 如何运行??
 
-setp 1 
+### setp 1 
 
 ```sh
-pnpm install
+### pnpm install
 ```
 
-setp 2 (可选) 修改 package.json 启动命令为你自己方便的命令
-setp 3 
+### setp 2 
+
+(可选) 修改 package.json 启动命令为你自己方便的命令
+
+### setp 3 
 
 ```sh
 pnpm run dev

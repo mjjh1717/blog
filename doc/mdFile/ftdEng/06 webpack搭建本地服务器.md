@@ -102,10 +102,26 @@
 ### Prox(跨域)
 
 - proxy是我们开发中非常常用的一个配置选项，它的目的设置代理来解决跨域访问的问题：
-  - 比如我们的一个api请求是 http://localhost:8888，但是本地启动服务器的域名是 http://localhost:8000，这个时候发送网络请求就会出现跨域的问题；
+  - 比如我们的一个api请求是 
+  
+    ```
+    http://localhost:8888
+    ```
+  
+    ，但是本地启动服务器的域名是 
+  
+    ```
+    http://localhost:8000
+    ```
+  
+    ，这个时候发送网络请求就会出现跨域的问题；
   - 那么我们可以将请求先发送到一个代理服务器，代理服务器和API服务器没有跨域的问题，就可以解决我们的跨域问题了；
 - 我们可以进行如下的设置：
-  - target：表示的是代理到的目标地址，比如 /api-hy/moment会被代理到 http://localhost:8888/api-hy/moment；
+  - target：表示的是代理到的目标地址，比如 /api-hy/moment会被代理到 
+  
+    ```
+    http://localhost:8888/api-hy/moment
+    ```
   - pathRewrite：默认情况下，我们的 /api-hy 也会被写入到URL中，如果希望删除，可以使用pathRewrite；
   - secure：默认情况下不接收转发到https的服务器上，如果希望支持，可以设置为false；
   - changeOrigin：它表示是否更新代理后请求的headers中host地址；
@@ -113,8 +129,18 @@
 ### changeOrigin的解析
 
 - 这个 changeOrigin官方说的非常模糊，通过查看源码我发现其实是要修改代理请求中的headers中的host属性：
-  - 因为我们真实的请求，其实是需要通过 http://localhost:8888来请求的；
-  - 但是因为使用了代码，默认情况下它的值时 http://localhost:8000；
+  - 因为我们真实的请求，其实是需要通过 
+  
+    ```
+    http://localhost:8888
+    ```
+  
+    来请求的；
+  - 但是因为使用了代码，默认情况下它的值时
+  
+    ```
+     http://localhost:8000
+    ```
   - 如果我们需要修改，那么可以将changeOrigin设置为true即可；
 
 ### historyApiFallback
