@@ -6,5 +6,9 @@
     "dev": "vitepress dev doc",
     "build": "vitepress build doc",
     "preview": "vitepress preview doc"
+  },
+  "dependencies": {
+    "@mdit-vue/shared": "^0.12.0",
+    "sass": "^1.59.2"
   }
 }
