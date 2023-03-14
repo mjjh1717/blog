@@ -4,17 +4,17 @@
 
 ## 如何运行??
 
-### setp 1 
+### setp 1
 
 ```sh
 ### pnpm install
 ```
 
-### setp 2 
+### setp 2
 
 (可选) 修改 package.json 启动命令为你自己方便的命令
 
-### setp 3 
+### setp 3
 
 ```sh
 pnpm run dev
@@ -26,19 +26,26 @@ pnpm run dev
 .
 └─docs 项目主目录
 │ index.md 首页
-│ htmlCss.md htmlCss 首页
-│ js-Prim.md js 基础 首页
-│ js-Level.md js 高级 首页
-│ ftdEng.md 前端工程化 首页
-│ vue.md vue 首页
-│ react.md react 首页
+│
+├─childPage
+│ ├─htmlCss.md htmlCss 首页
+│ ├─js-Prim.md js 基础 首页
+│ ├─js-Level.md js 高级 首页
+│ ├─ftdEng.md 前端工程化 首页
+│ ├─vue.md vue 首页
+│ ├─react.md react 首页
 │
 └─.vitepress 配置文件文件夹
-│ config.ts 项目配置文件
-├─cache
-└─theme 样式文件
-│ ├─index.ts 导出
-│ └─style.css 样式文件
+│ │ config.ts 项目配置文件
+│ ├─config
+│ │ ├─head.ts 顶部配置文件
+│ │ ├─index.ts 导出配置
+│ │ ├─nav.ts nav导航配置文件
+│ │ ├─sidebar.ts 侧边栏配置文件
+│ ├─cache
+│ └─theme 样式文件
+│ │ ├─index.ts 导出
+│ │ └─style.css 样式文件
 │
 └─mdFile MD 源文件文件夹
 │ ├─htmlCss htmlCss 源文件文件夹
@@ -56,4 +63,3 @@ package.json 项目配置文件
 pnpm-lock.yaml 项目依赖文件
 readme.md 说明文件
 ```
-

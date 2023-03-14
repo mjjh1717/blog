@@ -252,15 +252,15 @@
 
 ![image-20220402191149433](./img/image-20220402191149433.png)
 
-- 元素的实际占用宽度 = border + padding + width
-- 元素的实际占用高度 = border + padding + height
+- 元素的实际占用宽度 = width
+- 元素的实际占用高度 = height
 
 ### box-sizing: border-box
 
 ![image-20220402191210728](./img/image-20220402191210728.png)
 
-- 元素的实际占用宽度 = width
-- 元素的实际占用高度 = height
+- 元素的实际占用宽度 = border + padding + width
+- 元素的实际占用高度 = border + padding + height
 
 ## 块级元素的居中问题
 

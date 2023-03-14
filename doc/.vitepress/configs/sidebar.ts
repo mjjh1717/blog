@@ -20,7 +20,10 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
       items: [
         { text: "环境配置", link: "/mdFile/htmlCss/01 环境配置" },
         { text: "网站和网页", link: "/mdFile/htmlCss/02 网站和网页" },
-        { text: "浏览器和浏览器内核", link: "/mdFile/htmlCss/04 邂逅html" },
+        {
+          text: "浏览器和浏览器内核",
+          link: "/mdFile/htmlCss/03 浏览器和浏览器内核",
+        },
         { text: "邂逅html", link: "/mdFile/htmlCss/04 邂逅html" },
         {
           text: "HTML结构、元素、类型",
